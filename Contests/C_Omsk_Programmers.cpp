@@ -27,6 +27,8 @@ int main(){
             counta++; 
         }
 
+        
+
         ll checkb = b; 
         ll countb = 0; 
         while(true){
