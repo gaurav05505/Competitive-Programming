@@ -8,30 +8,10 @@ using namespace std;
 
 int main(){
 
-    int n = 8 ; 
+    string s = "gaurav";
+    string sub ="youras"; 
 
-    int best_a = 17 % 3; 
-    // int best_b = n; 
-    // int minn = INT_MAX;
-
-    // for(int i=1; i<n; i++){
-    //     int a = i; 
-    //     int b = n -a; 
-
-    //     int lcm = (a*b) / __gcd(a,b);
-    //     if (lcm < minn) {
-    //         minn = lcm;
-    //         best_a = a;
-    //         best_b = b;
-    //     }
-
-         
-    // }
-
-
-
-    cout<<best_a<<" "<<'\n';
-
+    cout << s.find(sub);
 
 
     return 0; 
