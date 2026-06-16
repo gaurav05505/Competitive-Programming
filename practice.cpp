@@ -1,18 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long
-#define pb push_back
-#define all(x) (x).begin(), (x).end()
-#define fastio ios::sync_with_stdio(false); cin.tie(NULL);
+int check(int a, int b) {
+    int opr = 0;
 
-int main(){
+    while (a > 0) {
+        a /= b;
+        opr++;
+    }
 
-    string s = "gaurav";
-    string sub ="youras"; 
+    return opr;
+}
 
-    cout << s.find(sub);
+int main() {
+    int a = 1337;
+    int b = 1;
 
+    int ans = INT_MAX;
 
-    return 0; 
+    for (int i = 0; i < 35; i++) {
+        int nb = b + i;
+
+        if (nb == 1) continue;
+
+        ans = min(ans, i + check(a, nb));
+    }
+
+    cout << ans << '\n';
+
+    return 0;
 }
