@@ -18,6 +18,9 @@ int main() {
 
     int ans = INT_MAX;
 
+
+
+    
     for (int i = 0; i < 35; i++) {
         int nb = b + i;
 
